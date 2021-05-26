@@ -1,0 +1,109 @@
+img {
+  width: 100%;
+  height: 100%;
+}
+.headerBgg {
+    background: url(./Images/mv-pm.jpg)50% 0% no-repeat fixed;
+    background-size: cover;
+    width: 100%;
+    max-height: 150vh;
+    position: relative;
+}
+.nsLogo {
+  width: 80px;
+}
+.menu {
+  width: 70px;
+  margin-right: 5px;
+  padding: 1px;
+  padding-top: 0px;
+  border: 1px solid #023bae;
+  box-sizing: content-box;
+  z-index: 9;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+.logo{
+    width: 75%;
+    text-align: center;
+    margin: 0px auto;
+    margin-top: -55px;
+}
+.music{
+    margin-left: 5%;
+    margin-top: 380px;
+}
+
+.saleBalloon{
+    background: url(./Images/sales-medal_bg.png);
+    background-size: cover;
+    width: 140px;
+    height: 140px;
+    color: rgb(245, 230, 146);
+    flex-direction: column;
+    margin-right: 5%;
+}
+.playMusic div{
+    width: 70px;
+    background-color: black;
+    border: 1px solid #fff;
+    border-radius: 9em;
+    color: #fff;
+    text-align: center;
+}
+.playMusic span{
+    border-right: .3px solid rgb(212, 212, 212);
+    margin: 0px 10px;
+}
+/* ----header---- */
+
+.seceondSection{
+    width: 100%;
+    height: 200vh;
+    background: url(./Images/page_bg-t-c.jpg);
+    background-size: 100%;
+}
+
+.notoSerifTC{
+    font-family: 'Noto Serif TC', serif;
+}
+
+.buyNow{
+    background: linear-gradient(
+        135deg
+        , #e60012 0%, #eb7833 50%, #e60012 100%);
+    width: 80%;
+    height: 80px;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #eb7833;
+    box-sizing: content-box;
+    font-size: 2rem;
+    position: relative;
+}
+.buyNow::after{
+    content: url(Images/arrow_ic-r-w.png);
+    position: absolute;
+    right: 10px;
+}
+
+.traialBg{
+    width: 80%;
+    height: 250px;
+    background: url(./Images/traial_bg-w.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 30px auto;
+}
+.youtueBox{
+    width: 84%;
+    height: 220px;
+    /* background: url(./Images/news_thumb_tu.jpg) no-repeat; */
+    background-size: cover;
+    border: 20px solid transparent ;
+    padding: 1px;
+    border-image: url(./Images/sitenav_flame-m.png) 20 stretch;
+    overflow: hidden;
+    /* z-index: 6; */
+    box-sizing: content-box;
+}
