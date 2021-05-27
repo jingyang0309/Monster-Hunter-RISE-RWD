@@ -3,8 +3,8 @@ img {
   height: 100%;
 }
 .headerBgg {
-    background: url(./Images/mv-pm.jpg)50% 0% no-repeat fixed;
-    background-size: cover;
+    background: url(./Images/mv-pm-sp.jpg)50% 0% no-repeat fixed;
+    background-size: contain;
     width: 100%;
     max-height: 150vh;
     position: relative;
@@ -18,7 +18,7 @@ img {
   padding: 1px;
   padding-top: 0px;
   border: 1px solid #023bae;
-  box-sizing: content-box;
+  background-clip: content-box;
   z-index: 9;
   position: fixed;
   right: 0;
@@ -60,9 +60,13 @@ img {
 
 .seceondSection{
     width: 100%;
-    height: 200vh;
     background: url(./Images/page_bg-t-c.jpg);
     background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .notoSerifTC{
@@ -72,13 +76,13 @@ img {
 .buyNow{
     background: linear-gradient(
         135deg
-        , #e60012 0%, #eb7833 50%, #e60012 100%);
+        , #e60012 0%, #eb7833 50%, #e60012 100%)50% 50% no-repeat;
+    background-clip: content-box;
     width: 80%;
-    height: 80px;
-    margin: 10px auto;
-    padding: 10px;
-    border: 1px solid #eb7833;
-    box-sizing: content-box;
+    height: 50px;
+    padding: 20px;
+    border: 1px solid #e25b07;
+    box-sizing: content-box !important;
     font-size: 2rem;
     position: relative;
 }
@@ -93,17 +97,86 @@ img {
     height: 250px;
     background: url(./Images/traial_bg-w.png) no-repeat;
     background-size: 100% 100%;
-    margin: 30px auto;
 }
 .youtueBox{
     width: 84%;
     height: 220px;
-    /* background: url(./Images/news_thumb_tu.jpg) no-repeat; */
+    background: url(./Images/news_thumb_tu.jpg) no-repeat;
     background-size: cover;
     border: 20px solid transparent ;
     padding: 1px;
-    border-image: url(./Images/sitenav_flame-m.png) 20 stretch;
+    /* border-image: url(./Images/sitenav_flame-m.png) 20 stretch; */
     overflow: hidden;
     /* z-index: 6; */
     box-sizing: content-box;
+}
+
+/* 六角形 */
+.Hexagon{
+    position: relative;
+}
+.filmText{
+    position: absolute;
+    top: 10px;
+    left: 30%;
+    font-size: 1.2rem;
+}
+
+.iconImg{
+    width: 50px;
+    margin: 10px;
+}
+
+.cardgroup{
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.newImformation{
+    background: url(./Images/sec-ttl_bg-sp.png)no-repeat;
+    background-size: contain;
+    width: 80%;
+    /* height: 200px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.slider{
+    width: 70%;
+    height: 8px;
+    background-color: #051c4b;
+    position: relative;
+    border: 1px solid #023bae;
+    border-radius: 5em;
+}
+
+.slidebar{
+    height: 20px;
+    width: 40px;
+    position: absolute;
+    top: -12px;
+}
+
+.banner{
+    width: 80%;
+    display: flex;
+    background-color: #010247;
+    background-clip: content-box;
+    box-sizing: content-box;
+    padding: 2px;
+    border: 3px solid #010247;
+    /* background: url(./Images/elem_pt.png) no-repeat; */
+}
+.bannerimg{
+    width: 150px;
+    height: auto;
+}
+.bannerText{ 
+    background: url(./Images/elem_pt.png) no-repeat;
+    background-position: 90px;
+    background-size: 70%;
+    height: 100%;
 }
